@@ -8,11 +8,11 @@
 class Song {
 
     private:
-        std::string Title;
-        std::vector<std::string> Authors;
-        std::string Category;
-        unsigned int Year;
-        unsigned int Length;
+        std::string title;
+        std::vector<std::string> authors;
+        std::string category;
+        unsigned int year;
+        unsigned int length;
 
     public:
         Song(std::string t="", std::vector<std::string> Aut=nullptr, std::string Cat="", int y=0, int l=0);
