@@ -13,7 +13,7 @@ class Tape : public Product {
         std::string type;  // C60, C90 or C120 
 
     public:
-        Vynil(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r);
+        Tape(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r);
 
         // GETTERS
         std::string getName() const;

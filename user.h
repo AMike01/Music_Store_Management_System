@@ -4,7 +4,7 @@
 #include <QXmlStreamWriter>
 #include <QXmlStreamReader>
 
-class User{
+class User {
 private:
     std::string User_name;
     std::string username;
@@ -12,13 +12,14 @@ private:
 public:
     User(std::string nam="",std::string usern="",std::string pass="");
     virtual ~User();
+    virtual bool hasManagement() const=0;
 
     // GETTERS
     std::string getName() const;
     std::string getSurname() const;
     std::string getUsername() const;
     std::string getPassword() const;
-
+    
 
     // SETTERS
     void setName(const std::strin newName);

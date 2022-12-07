@@ -6,13 +6,13 @@
 #include <string>
 #include <vector>
 
-class Vynil : public Product {
+class CD : public Product {
 
     private:
         std::vector<Song> Songs;
         bool rewritable;
     public:
-        Vynil(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r);
+        CD(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r);
 
         // GETTERS
         std::string getName() const;
