@@ -1,7 +1,6 @@
 #ifndef PRODUCT_H
 #define PROFUCT_H
 #include <string>
-#include<QMessageBox>
 #include<QXmlStreamWriter>
 #include<QXmlStreamReader>
 
