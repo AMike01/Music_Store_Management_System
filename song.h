@@ -15,7 +15,7 @@ class Song {
         unsigned int Length;
 
     public:
-        Song(std::string t="", std::string Aut="", std::string Cat="", int y=0, int l=0);
+        Song(std::string t="", std::vector<std::string> Aut=nullptr, std::string Cat="", int y=0, int l=0);
         ~Song();
         
         // GETTERS
@@ -33,6 +33,6 @@ class Song {
         void setLength(unsigned int newLength);
 
 
-};
+}; 
 
 #endif  // SONG_H
