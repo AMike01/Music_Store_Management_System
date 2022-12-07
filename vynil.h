@@ -9,17 +9,17 @@
 class Vynil : public Product {
 
     private:
-        std::vector<Song> Songs;
+        std::vector<Song> songs;
         unsigned int rpm;  // 33, 45, 78 giri 
 
     public:
-        Vynil(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r);
+        Vynil(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r=0);
 
         // GETTERS
         std::string getName() const;
         double getPrice() const;
         std::vector<Song> getSongs() const;
-        unsigned int getRPM() const;
+        unsigned int getRpm() const;
         
         // SETTERS
         void setSongs(std::vector<Song> newSongs);

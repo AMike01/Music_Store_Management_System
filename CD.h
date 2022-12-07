@@ -9,10 +9,10 @@
 class CD : public Product {
 
     private:
-        std::vector<Song> Songs;
+        std::vector<Song> songs;
         bool rewritable;
     public:
-        CD(std::string n="", double p=0, std::vector<Song> s=nullptr, unsigned int r);
+        CD(std::string n="", double p=0, std::vector<Song> s=nullptr, bool r=0);
 
         // GETTERS
         std::string getName() const;
@@ -22,7 +22,7 @@ class CD : public Product {
         
         // SETTERS
         void setSongs(std::vector<Song> newSongs);
-        void setRewritable(bool R);
+        void setRewritable(bool newR);
 };
 
 #endif  // CD_H

@@ -8,17 +8,17 @@ Song::~Song() {};
 
 // Get Methods 
 
-std::string Song::getTitle() const {return Title;}
-std::vector<std::string> Song::getAuthors() const {return Authors;}
-std::string Song::getCategory() const { return Category;}
-unsigned int Song::getYear() const { return Year;}
-unsigned int Song::getLength() const { return Length;}
+std::string Song::getTitle() const {return title;}
+std::vector<std::string> Song::getAuthors() const {return authors;}
+std::string Song::getCategory() const { return category;}
+unsigned int Song::getYear() const { return year;}
+unsigned int Song::getLength() const { return length;}
 
 
 // Set Methods
 
-void Song::setTitle(std::string newTitle) { Title = newTitle;}
-void Song::setAuthors(std::vector<std::string> newAuthors) { Authors = newAuthors;}
-void Song::setCategory(std::string newCategory) { Category = newCategory;}
-void Song::setYear(unsigned int newYear) { Year = newYear;}
-void Song::setLength(unsigned int newLength) { Length = newLength;}
+void Song::setTitle(std::string newTitle) { title = newTitle;}
+void Song::setAuthors(std::vector<std::string> newAuthors) { authors = newAuthors;}
+void Song::setCategory(std::string newCategory) { category = newCategory;}
+void Song::setYear(unsigned int newYear) { year = newYear;}
+void Song::setLength(unsigned int newLength) { length = newLength;}
